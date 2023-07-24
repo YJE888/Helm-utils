@@ -1,14 +1,6 @@
 # Helm 을 사용하여 CephFS-CSI 설치
-#### helm 설치
-```
-curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
-chmod 700 get_helm.sh
 
-./get_helm.sh
-helm version
-```
-
-#### helm Repo 등록
+#### CephFS-CSI helm Repo 등록
 ```
 helm repo add ceph-csi https://ceph.github.io/csi-charts
 helm repo list
