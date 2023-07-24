@@ -1,0 +1,15 @@
+csiConfig:
+  - clusterID: "#ceph mon dump로_확인"
+    monitors:
+      - "mon_IP:6789"
+      - "mon_IP:6789"
+      - "mon_IP:6789"
+nodeplugin:
+  tolerations:
+  - effect: NoSchedule
+    key: #key값_입력
+    operator: Equal
+    value: #value값_입력
+provisioner:
+  name: provisioner
+  replicaCount: 2
